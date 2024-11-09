@@ -1,50 +1,67 @@
-# Welcome to your Expo app 👋
+# ProductsAdminApp 🛍️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to ProductsAdminApp! This project is a robust e-commerce management solution developed with [React Native](https://reactnative.dev/) and [Expo SDK 52 (Beta)](https://expo.dev/) that provides comprehensive product management capabilities for your online store.
 
-## Get started
+## About the Project
 
-1. Install dependencies
+ProductsAdminApp is designed to streamline the management of e-commerce products with a user-friendly interface. The app includes secure authentication and comprehensive product management features, making it an essential tool for e-commerce administrators.
 
+### Key Features
+
+- 🔐 Secure login system to protect your data
+- 📱 Intuitive product management interface
+- 📸 Image upload capabilities for product photos
+- ✏️ Full product information editing
+- 📊 Product inventory management
+- 🎨 User-friendly design
+- 📱 Responsive layout for various screen sizes
+
+## Running the App
+
+To get started with ProductsAdminApp:
+
+1. Clone the repository and install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+2. Configure your environment variables:
    ```bash
-    npx expo start
+   cp .env.template .env
+   ```
+   Fill in your configuration details in the `.env` file
+
+3. Start the development server:
+   ```bash
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+> **Note:** Make sure you have the necessary permissions and API keys configured in your environment variables for image upload functionality.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Authentication
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+The app implements a secure authentication system:
+- Login page with email and password validation
+- Secure session management
+- Automatic session timeout
 
-## Get a fresh project
+## Product Management
 
-When you're ready, run:
+Administrators can:
+- Create new products with detailed information
+- Upload and manage product images
+- Edit existing product details
+- Manage product inventory
+- Delete products from the catalog
 
-```bash
-npm run reset-project
-```
+## Learn More
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+To learn more about the technologies used in this project:
+- [React Native Documentation](https://reactnative.dev/docs/getting-started)
+- [Expo Documentation](https://docs.expo.dev/)
+- [Axios](https://axios-http.com/) for API requests
+- [Formik](https://formik.org/) for form handling
 
-## Learn more
+## Contributing
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+We welcome contributions! Please feel free to submit a Pull Request.
